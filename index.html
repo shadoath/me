@@ -1,10 +1,75 @@
 <html>
   <head>
+    <title>Shadoath.me</title>
+    <!-- Foundation -->
+    <!-- foundation-float.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.css" integrity="sha256-+8r1EkvIoWpxT8CKbSw/rCQWttnazW9mLPg6xT+/2EM=" crossorigin="anonymous" />
+
+    <!-- foundation-prototype.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.css" integrity="sha256-IHU5CkoOGpVMODA9ql3Lz609uhGwwFlLNSpAMoOY2us=" crossorigin="anonymous" />
+
+    <!-- foundation-rtl.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-rtl.min.css" integrity="sha256-Az+E7JXW71Srarkum5QPTdnobddg2GqI1i8+nMusgLk=" crossorigin="anonymous" />
+    <style>
+      h1{
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Shadoath.me</h1>
     <hr>
     <div class="row">
+      <div class="small-12 medium-6 large-4 columns">
+        <h3>
+          Level 1
+        </h3>
+        <script>
+          function level_1() {
+            var input = document.getElementById('lvl_1').value;
+            if(input == "white"){
+              alert("Success");
+              document.getElementById('lvl_1_bonus').style.display = "block";
+            }else{
+              alert("Nope");
+            }
+          }
+        </script>
+        <ul>
+          <li>
+            <a href="http://js.do/shadoath/hello-world">Hello-World</a><br>
+            What is the hidden word?<input type="text" id="lvl_1">
+            <input type=button value="Submit" onClick="level_1()">
+          </li>
+          <div id="lvl_1_bonus" style="display:none">
+            How did you find the hidden word?
+          </div>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-4 columns">
+        <h3>
+          Level 2
+        </h3>
+        <ul>
+          <li>
+            <a href="http://js.do/shadoath/calculator">Calculator</a>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="small-12 medium-6 large-4 columns">
+        <h3>
+          Level 3
+        </h3>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="small-12 columns">
+        <h3>Fun</h3>
+        <a href="http://js.do/shadoath/191558">Maze</a>
+      </div>
     </div>
   </body>
 </html>
