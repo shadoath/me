@@ -17,52 +17,55 @@
     </style>
   </head>
   <body>
-    <h1>Shadoath.me</h1>
-    <hr>
     <div class="row">
+      <div class="small-12 columns">
+        <h1>Shadoath.me</h1>
+      </div>
+      <hr>
       <div class="small-12 medium-6 large-4 columns">
         <h3>
           Level 1
         </h3>
-        <script>
-          function level_1() {
-            var input = document.getElementById('lvl_1').value;
-            if(input == "white"){
-              alert("Success");
-              document.getElementById('lvl_1_bonus').style.display = "block";
-            }else{
-              alert("Nope");
-            }
-          }
-        </script>
+        <p>Basics of HTML and css</p>
         <ul>
           <li>
             <a href="http://js.do/shadoath/hello-world">Hello-World</a><br>
-            What is the hidden word?<input type="text" id="lvl_1">
-            <input type=button value="Submit" onClick="level_1()">
+            What word is written but not seen?
+            <input type="text" id="lvl_1_a" placeholder="It is due to this color">
+            <input type=button value="Submit" onClick="level_1_a()">
+            <div id="lvl_1_bonus" style="display:none">
+              Think you get the basics of HTML?<br>
+              Then <a href="shadoath.me/lvl_1.html">prove it!</a>
+            </div>
           </li>
-          <div id="lvl_1_bonus" style="display:none">
-            How did you find the hidden word?
-          </div>
+          <li>
+            <a href="http://js.do/shadoath/css-fun">Styling</a><br>
+            What style wins?<input type="text" id="lvl_1_b" placeholder="Class/Style/Inline">
+            <input type=button value="Submit" onClick="level_1_b()">
+          </li>
         </ul>
       </div>
       <div class="small-12 medium-6 large-4 columns">
         <h3>
           Level 2
         </h3>
+        <p>JavaScript</p>
         <ul>
           <li>
             <a href="http://js.do/shadoath/calculator">Calculator</a>
           </li>
-          <li></li>
+          <li>
+          </li>
         </ul>
+              <a href="shadoath.me/lvl_2.html">Skill check</a>
       </div>
       <div class="small-12 medium-6 large-4 columns">
         <h3>
           Level 3
         </h3>
+        <p>What do you want to do?</p>
         <ul>
-          <li></li>
+          <li><a href="https://kickassapp.com/">Destroy the web</a></li>
         </ul>
       </div>
       <hr>
@@ -71,5 +74,16 @@
         <a href="http://js.do/shadoath/191558">Maze</a>
       </div>
     </div>
+    <script>
+      function level_1_a() {
+        var input = document.getElementById('lvl_1_a').value;
+        if(input == "white"){
+          alert("Success");
+          document.getElementById('lvl_1_bonus').style.display = "block";
+        }else{
+          alert("Nope");
+        }
+      }
+    </script>
   </body>
 </html>
